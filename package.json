@@ -1,0 +1,23 @@
+{
+  "name": "Hardhar-Fund-Me",
+  "auther": "Jimit",
+  "dependencies": {
+    "@chainlink/contracts": "^1.1.1",
+    "@nomic/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.4.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.5",
+    "hardhat-deploy": "^0.12.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.12"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "test:staging": "npx hardhat test --network sepolia",
+    "lint": "npx solhint 'contracts/*.sol",
+    "lint:fix": "npx dolhint 'contracts/*.sol --fix"
+  }
+}
